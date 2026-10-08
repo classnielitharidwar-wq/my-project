@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+
+  build:
+    commands:
+      - echo "Building the Application..."
+      - test -f index.html
+      - echo "Build Successful!"
+
+artifacts:
+  files:
+    - index.html
+    - appsec.yml
+    - start.sh
